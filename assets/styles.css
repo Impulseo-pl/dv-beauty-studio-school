@@ -821,8 +821,8 @@ section{padding-block:clamp(74px,10vh,124px)}   /* nieco więcej oddechu niż re
 .pagehead-soft .eyebrow{color:var(--ink-soft)}
 .pagehead-soft .eyebrow::before{background:var(--accent)}
 .pagehead-soft p{color:var(--ink-soft);margin-top:var(--space-4);max-width:46ch}
-.pagehead-soft .ph-fig{margin:0;aspect-ratio:4/3;border-radius:16px;overflow:hidden;box-shadow:var(--sh-md)}
-.pagehead-soft .ph-fig img{width:100%;height:100%;object-fit:cover}
+.pagehead-soft .ph-fig{position:relative;margin:0;aspect-ratio:4/3;border-radius:16px;overflow:hidden;box-shadow:var(--sh-md)}
+.pagehead-soft .ph-fig img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .pagehead-soft .ph-copy{order:-1}   /* figure PIERWSZE w DOM (blur-guard) -> copy wizualnie z lewej przez order */
 @media(max-width:860px){.pagehead-soft .wrap{grid-template-columns:1fr}.pagehead-soft .ph-copy{order:0}.pagehead-soft .ph-fig{aspect-ratio:16/10}}
 
