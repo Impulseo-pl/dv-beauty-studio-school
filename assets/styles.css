@@ -1746,11 +1746,13 @@ footer{view-transition-name:mt-foot}
 .nav .nav-links a.btn-accent{color:#fff}
 .btn-accent[data-accent-d],.cta-d .btn-accent{color:#fff}
 
-/* === rozróżnienie palety: zieleń butelkowa (odtworzona z rejestru) ===
+/* === rozróżnienie palety: róż fuksja (wybór klienta 31.08.2026, próbka #E94BB4) ===
    Blokada powtórzeń (13.08.2026): ten sam odcień nie idzie do kolejnych
    klientów pod rząd. Wybór zapisany w palety-uzyte.json, więc przebudowa
-   tego dema odtworzy DOKŁADNIE ten kolor. */
-:root{--accent:#5B774A;--accent-d:#476337;--accent-soft:rgba(91,119,74,.10);--gold:#5B774A;}
+   tego dema odtworzy DOKŁADNIE ten kolor.
+   --accent-d ciemniejszy o tyle, by biały tekst na CTA trzymał 5,0:1 (tyle co poprzednia zieleń). */
+:root{--accent:#E94BB4;--accent-d:#C9268F;--accent-soft:rgba(233,75,180,.10);--gold:#E94BB4;}
 .btn-accent{color:#fff}
 .nav .nav-links a.btn-accent{color:#fff}
 .btn-accent[data-accent-d],.cta-d .btn-accent{color:#fff}
+.btn-accent:hover,.sticky-reserve .sr-book:hover{background:#D12C97;border-color:#D12C97}  /* hover jaśniejszy od --accent-d, ale wciąż 4,6:1 z bielą */
